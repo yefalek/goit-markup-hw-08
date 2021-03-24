@@ -1,0 +1,16 @@
+.footer-adress{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+
+  &__item{
+    margin-bottom: 10px;
+  }
+
+  & a{
+    color: var(--adressf-color);
+  }
+}

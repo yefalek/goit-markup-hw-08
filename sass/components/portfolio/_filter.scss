@@ -1,0 +1,52 @@
+.filter{
+  &__button{
+    padding: 6px 22px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    border: none;
+    border-radius: 4px;
+  
+    transition: var(--cubic-animation-time);
+    color: var(--second-color);
+    background: var(--filter-color);
+    
+    &:focus,&:hover{
+      background: var(--first-color);
+      color: var(--white-color);
+      box-shadow: var(--filter-button-shadow);
+      transition: var(--cubic-animation-time);
+    }
+  }
+
+  &__container{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;  
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__section{
+    padding: 94px 0;
+  }
+
+  &__list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__item{
+    margin-left: 8px;
+
+    &:first-child{
+      margin-left: -8px;
+    }
+  }
+}

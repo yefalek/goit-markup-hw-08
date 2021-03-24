@@ -1,0 +1,116 @@
+.header-nav__list{
+    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 50px;
+
+  & li{
+    margin-left: 50px;
+  }
+}
+
+.header-nav__list{
+  & li{
+    &:first-child{
+      margin-left: 0px;
+    }
+  }
+
+  & .header-nav__link{
+    color: var(--third-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    transition: var(--cubic-animation-time);
+  }
+}
+
+.header-nav__link{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--cubic-animation-time);
+
+  &.current{
+    position: relative;
+    color: var(--first-color);
+  }
+}
+
+.header-nav__list{
+  & .header-nav__link{
+    &:hover,
+    &:focus {
+      &::after{
+        color: var(--first-color);
+        opacity: 1;
+        transform: scaleX(1);
+        transition: var(--cubic-animation-time);       
+      }
+    }
+
+    &::after{
+      position: absolute;
+      top: 48px;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      width: 100%;
+
+      content: '';
+      display: block;
+
+  
+      border-radius: 2px;
+      background-color: var(--first-color);
+
+      opacity: 0;
+      transform: scaleX(0);
+      transition: transform var(--cubic-animation-time),
+        opacity var(--cubic-animation-time);
+    }
+
+    &.current{
+      &::after{
+        position: absolute;
+        top: 48px;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 100%;
+
+        content: '';
+        display: block;
+        opacity: 1;
+        transform: scaleX(1);
+
+        border-radius: 2px;
+        background-color: var(--first-color);
+      }
+    }
+  }
+}
+
+.header-nav__list{
+  & .header-nav__link{
+    &:hover,&:focus{
+      color: var(--first-color);
+      transition: var(--cubic-animation-time);
+    }
+  }
+}
+
+.link-icon{
+  margin-right: 5px;
+  fill: currentColor;
+
+  &:hover,&:focus{
+    fill: currentColor;
+    color: var(--first-color);
+    transition: var(--cubic-animation-time);
+  }
+}

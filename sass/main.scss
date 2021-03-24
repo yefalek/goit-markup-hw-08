@@ -1,0 +1,25 @@
+@import "./base/normalize";
+@import "./utils/variables";
+@import "./components/general";
+@import "./components/content-container";
+@import"./components/visually-hidden";
+@import"./components/header";
+@import"./components/header-logo";
+@import"./components/header-links";
+@import"./components/header-contacts";
+@import"./components/footer";
+@import"./components/footer-adress";
+@import"./components/footer-social";
+@import"./components/footer-subscribe";
+
+@import"./components/index/hero";
+@import"./components/index/backdrop";
+@import"./components/index/modal";
+@import"./components/index/features";
+@import"./components/index/works";
+@import"./components/index/team";
+@import"./components/index/team-social";
+@import"./components/index/clients";
+
+@import"./components/portfolio/filter";
+@import"./components/portfolio/filter-list";

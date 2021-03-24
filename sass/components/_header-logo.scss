@@ -1,0 +1,14 @@
+.header-nav_logo{
+  font-family: 'Raleway', sans-serif;    
+  font-style: normal;    
+  font-weight: bold;    
+  font-size: 26px;   
+  line-height: 35px;
+  letter-spacing: 0.03em; 
+  color: var(--second-color);
+
+  &_web{
+    font-family: 'Raleway', sans-serif;
+    color: var(--first-color);
+  }
+}
