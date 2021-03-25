@@ -177,7 +177,8 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 480px;
+  min-width: 320px;
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;
@@ -185,6 +186,18 @@ img {
   display: flex;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .visually-hidden {
