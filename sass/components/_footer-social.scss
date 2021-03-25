@@ -1,7 +1,11 @@
 .page-footer__social{
-  display: inline-block;
-  margin-left: 70px;
-  margin-top: 14px;
+  
+  
+  @media screen and (min-width:1200px) {
+    margin-left: 70px;
+    margin-top: 14px;
+    display: inline-block;
+  }
 
   & h3{
     &.common-title{

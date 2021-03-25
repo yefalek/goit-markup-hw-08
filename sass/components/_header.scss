@@ -7,7 +7,16 @@
   border: 1px solid var(--head-border-color);
   background: var(--white-color);
 
-  &-nav, &-logo{
+  &-nav {
+    display: none;
+    @media (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &-logo{
     display: flex;
     align-items: center;
     justify-content: center;

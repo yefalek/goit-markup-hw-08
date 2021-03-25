@@ -1,7 +1,10 @@
 .page-footer{
   &__subscribe{
-    display: inline-block;
-    margin-left: 70px;
+    
+    @media screen and (min-width:1200px) {
+      display: inline-block;
+      margin-left: 70px;
+    }
     
     & h3{
       &.common-title{
@@ -16,9 +19,12 @@
   }
 
   &__container{
-    display: flex;
+    
     align-items: center;
     justify-content: center; 
+    @media screen and (min-width:1200px){
+      display: flex;
+    }
   }
 
   &__mail{
