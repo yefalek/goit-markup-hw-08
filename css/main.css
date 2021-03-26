@@ -814,6 +814,20 @@ a.page-footer__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 64px;
+}
+
+.mobile-social__item {
+  margin: 0 10px;
+}
+
+.mobile-social__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: var(--first-color);
 }
 
 .hero {
