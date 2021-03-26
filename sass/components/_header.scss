@@ -1,11 +1,15 @@
 .header{
   position: relative;
   display: flex;
+  
   padding-top: 24px;
   padding-bottom: 25px; 
   margin: 0 auto;
+
   border: 1px solid var(--head-border-color);
   background: var(--white-color);
+
+  
 
   &-nav {
     display: none;
@@ -21,5 +25,11 @@
     align-items: center;
     justify-content: center;
   }
-}
 
+  & .container{
+    @media (min-width: 320px){
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
