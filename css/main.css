@@ -1509,7 +1509,7 @@ a.page-footer__logo {
   border-radius: var(--team-border-radius);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .team__item {
     margin-bottom: 30px;
   }
@@ -1547,8 +1547,8 @@ a.page-footer__logo {
 }
 
 .img__thumb {
-  width: 450px;
-  height: 460px;
+  max-width: 450px;
+  max-height: 460px;
   border-radius: 0px;
 }
 
