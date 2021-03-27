@@ -22,7 +22,8 @@
   
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: var(--first-color);
+  color: var(--first-color);
 }
   
 .menu-container {
@@ -47,7 +48,12 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--second-color);
+
+  &:hover,&:focus{
+    fill: var(--first-color);
+    color: var(--first-color);
+  }
 }
   
 .mobile-menu {
@@ -65,6 +71,10 @@
 
     color: var(--second-color);
     text-decoration: none;
+
+    &:hover,&:focus{
+      color: var(--first-color);
+    }
   }
 
   &_item{
@@ -109,10 +119,6 @@
   display: flex;
   margin-top: 64px;
 
-  &__item{
-    margin: 0 10px;
-  }
-
   &__link{
     font-style: normal;
     font-weight: 500;
@@ -120,5 +126,10 @@
     line-height: 22px;letter-spacing: 0.02em;
     
     color: var(--first-color);
+  }
+
+  &__devider{
+    color: rgba(33, 33, 33, 0.2);
+    margin: 10px;
   }
 }
