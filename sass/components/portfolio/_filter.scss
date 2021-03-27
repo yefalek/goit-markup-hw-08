@@ -33,11 +33,21 @@
   }
 
   &__section{
-    padding: 94px 0;
+    @media screen and (max-width:768px) {
+      padding: 60px 0;
+    }
+    @media screen and (min-width:1200px){
+      padding: 94px 0;
+    }
   }
 
   &__list{
-    display: flex;
+    @media screen and (max-width:768px){
+      width: 460px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
     justify-content: center;
     margin-bottom: 50px;
   }

@@ -1748,18 +1748,34 @@ a.page-footer__logo {
   padding-right: 15px;
 }
 
-.filter__section {
-  padding: 94px 0;
+@media screen and (max-width: 768px) {
+  .filter__section {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__section {
+    padding: 94px 0;
+  }
 }
 
 .filter__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .filter__list {
+    width: 460px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .filter__item {
@@ -1777,23 +1793,27 @@ h2.project_name {
   margin-bottom: 4px;
 }
 
-.project__list {
-  margin: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
+@media screen and (min-width: 1200px) {
+  .project__list {
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+  }
 }
 
-.project__list > .project__item {
-  -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
-      flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+@media screen and (min-width: 1200px) {
+  .project__list > .project__item {
+    -ms-flex-preferred-size: calc(100% / 3 - var(--card-set-gap));
+        flex-basis: calc(100% / 3 - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+  }
 }
 
 .project__content {
@@ -1848,14 +1868,5 @@ h2.project_name {
   transition: transform var(--cubic-animation-time), -webkit-transform var(--cubic-animation-time);
   -webkit-box-shadow: var(--filter-items-shadow);
           box-shadow: var(--filter-items-shadow);
-}
-
-.project__filter {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: var(--third-color);
 }
 /*# sourceMappingURL=main.css.map */
