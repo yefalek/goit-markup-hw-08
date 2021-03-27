@@ -6,6 +6,16 @@
   letter-spacing: 0.03em;
   color: var(--white-color);
 
+  &__list{
+    @media screen and (max-width:480px) {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 20px 0 60px;
+    }
+    
+  }
+
   &__item{
     margin-bottom: 10px;
   }

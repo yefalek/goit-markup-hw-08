@@ -8,7 +8,8 @@
   }
 
   &__adress{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
   }
   
   &__logo{
@@ -25,7 +26,11 @@
 
 a{
   &.page-footer__logo{
-    margin-bottom: 20px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
 
