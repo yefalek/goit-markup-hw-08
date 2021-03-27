@@ -7,6 +7,10 @@
   letter-spacing: 0.03em; 
   color: var(--second-color);
 
+  @media screen and (min-width:480px){
+    margin-right: 269px;
+  }
+
   &_web{
     font-family: 'Raleway', sans-serif;
     color: var(--first-color);
