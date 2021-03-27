@@ -14,18 +14,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<!-- Полоска навигации -->
+
 <body>
+  <!-- Полоска навигации -->
   <header class="header">
     <div class="container">
+      <a href="/" class="header-nav_logo" >
+        <span class="header-nav_logo_web">Web</span>Studio
+      </a>
+    
       <nav class="header-nav">
-      
-          <a href="/" class="header-nav_logo" >
-            <span class="header-nav_logo_web">Web</span>Studio
-          </a>
-        
-        
-          <ul class="header-nav__list">
+        <ul class="header-nav__list">
             <li class="header-nav__item">
               <a class="header-nav__link" href="index.html">Студия</a>
             </li>
@@ -60,8 +59,23 @@
         </li>
 
       </ul>
-    </div>
+
+      <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu">
+        <svg
+          width="48"
+          height="44"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+            <use class="icon-cross" href="./images/icons.svg#menu-icon">
+            </use>
+        </svg>
+    </button>
+  </div>
 </header>
+<!-- Контент страницы -->
 <main>
   <!-- Projects section  -->
   <h1 class="visually-hidden">Projects</h1> <!--скрытый заголовок -->
@@ -245,6 +259,70 @@
     </section>
 </main>
 
+<!-- Мобильное меню -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg
+      fill="currentColor"
+      
+      xmlns="http://www.w3.org/2000/svg"
+      width="40"
+      height="40">
+        <use href="./images/icons.svg#menu-close">
+        </use>
+    </svg>
+  </button>
+
+  <ul class="mobile-menu">
+    <li class="mobile-menu_item">
+      <a href="./index.html" class="link">Студия</a>
+    </li>
+
+    <li class="mobile-menu_item">
+      <a href="./portfolio.html" class="link">Портфолио</a>
+    </li>
+
+    <li class="mobile-menu_item">
+      <a href="" class="link">Контакты</a>
+    </li>
+    
+  </ul>
+
+  <div class="mobile-contacts">
+    <a class="mobile-contacts_number">
+      +38 096 111 11 11
+    </a>
+    <a class="mobile-contacts_mail">
+      info@devstudio.com
+    </a>
+  </div>
+
+  <ul class="mobile-social">
+    <li class="mobile-social__item">
+          <a class="mobile-social__link">
+            Instagram<span class="mobile-social__devider">|</span>
+          </a>
+    </li>
+
+    <li class="mobile-social__item">
+          <a class="mobile-social__link">
+            Twitter<span class="mobile-social__devider">|</span>
+          </a>
+    </li>
+
+    <li class="mobile-social__item">
+          <a class="mobile-social__link">
+            Facebook<span class="mobile-social__devider">|</span>
+          </a>
+    </li>
+
+    <li class="mobile-social__item">
+          <a class="mobile-social__link">
+            LinkedIn
+          </a>
+    </li>
+  </ul>
+</div>
 <!-- Подвал страницы -->
 <footer class="page-footer">
   <div class="container">
