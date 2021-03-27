@@ -1,6 +1,4 @@
 .header{
-  position: relative;
-  display: flex;
   
   padding-top: 24px;
   padding-bottom: 25px; 
@@ -8,8 +6,6 @@
 
   border: 1px solid var(--head-border-color);
   background: var(--white-color);
-
-  
 
   &-nav {
     display: none;
@@ -21,13 +17,15 @@
   }
 
   &-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media screen and (min-width:1200px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   & .container{
-    @media (min-width: 320px){
+    @media (max-width: 480px){
       display: flex;
       justify-content: space-between;
       max-width: 480px;
