@@ -61,6 +61,10 @@
   margin: 0;
   list-style: none;
 
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+
   & .link {
     font-style: normal;
     font-weight: 500;
