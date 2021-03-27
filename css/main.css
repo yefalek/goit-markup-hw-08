@@ -221,7 +221,7 @@ img {
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -235,7 +235,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -249,7 +249,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -540,7 +540,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .footer-adress__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -562,7 +562,7 @@ a.page-footer__logo {
   color: var(--adressf-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-footer__social {
     margin-bottom: 60px;
   }
@@ -585,7 +585,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-footer__social h3.common-title {
     text-align: center;
   }
@@ -656,7 +656,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-footer__subscribe h3.common-title {
     text-align: center;
   }
@@ -668,7 +668,7 @@ a.page-footer__logo {
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -698,7 +698,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .page-footer__mail {
     width: 450px;
     margin-bottom: 20px;
@@ -877,6 +877,13 @@ a.page-footer__logo {
 }
 
 .mobile-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 302px;
 }
 
@@ -1631,7 +1638,7 @@ a.page-footer__logo {
           justify-content: space-between;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1646,7 +1653,7 @@ a.page-footer__logo {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .clients__item {
     margin-bottom: 30px;
   }
