@@ -7,6 +7,7 @@ h2.project_name{
 
 .project{
   &__list{
+
     @media screen and (min-width:1200px){
       margin: 0;
       list-style: none;
@@ -18,6 +19,11 @@ h2.project_name{
     }
 
     & > .project__item{
+      margin-bottom: 30px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
       @media screen and (min-width:1200px) {
         flex-basis: calc(100% / 3 - var(--card-set-gap));
         margin-left: var(--card-set-gap);
@@ -53,6 +59,15 @@ h2.project_name{
       transform: translateY(100%);
       transition: transform var(--cubic-animation-time);
     }
+  }
+
+  &__filter{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;letter-spacing: 0.03em;
+    
+    color: var(--third-color);
   }
 
   &__item{

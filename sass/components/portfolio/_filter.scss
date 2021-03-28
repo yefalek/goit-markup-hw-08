@@ -33,7 +33,7 @@
   }
 
   &__section{
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:1200px) {
       padding: 60px 0;
     }
     @media screen and (min-width:1200px){
@@ -42,13 +42,15 @@
   }
 
   &__list{
-    @media screen and (max-width:768px){
-      width: 460px;
+    &-first{
       display: flex;
-      flex-wrap: wrap;
+      margin-bottom: 15px;
     }
-    
-    justify-content: center;
+    @media screen and (max-width:768px){
+      max-width: 468px;
+      justify-content: left;
+    }
+    display: flex;
     margin-bottom: 50px;
   }
 
