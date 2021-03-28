@@ -418,10 +418,15 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 330px;
   }
   .header-contacts li {
     margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    margin-left: 330px;
   }
 }
 
@@ -1638,7 +1643,7 @@ a.page-footer__logo {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .clients__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

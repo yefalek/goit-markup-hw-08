@@ -19,15 +19,14 @@
 
   &__list{
     display: flex;
-    
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1199px) {
       flex-wrap: wrap;
-    }
-    @media screen and (min-width:1200px) {
-      display: flex;
-    }
+    // }
+    // @media screen and (min-width:1200px) {
+    //   display: flex;
+    // }
   }
 
   &__item{
