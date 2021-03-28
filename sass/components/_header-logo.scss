@@ -1,17 +1,22 @@
-.header-nav_logo{
+.header-nav__logo{
   font-family: 'Raleway', sans-serif;    
   font-style: normal;    
   font-weight: bold;    
   font-size: 26px;   
   line-height: 35px;
   letter-spacing: 0.03em; 
+
   color: var(--second-color);
 
-  @media screen and (max-width:480px){
+  @media screen and (max-width:1199px){
+    display: flex;
+    align-items: center;
     margin-right: auto;
+    font-size: 24px;
+    line-height: 28px;
   }
 
-  &_web{
+  &-web{
     font-family: 'Raleway', sans-serif;
     color: var(--first-color);
   }
