@@ -1,6 +1,10 @@
 .page-footer__social{
-  @media screen and (max-width:768px){
+  @media screen and (max-width:767px){
     margin-bottom: 60px;
+  }
+  
+  @media screen and (min-width: 768px)and(max-width:1199px){
+    text-align: center;
   }
   
   @media screen and (min-width:1200px) {
@@ -11,7 +15,7 @@
 
   & h3{
     &.common-title{
-      @media screen and (max-width:768px) {
+      @media screen and (max-width:767px) {
         text-align: center;
       }
       

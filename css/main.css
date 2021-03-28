@@ -516,24 +516,46 @@ img {
 
 .page-footer {
   margin: 0 auto;
+  padding: 60px 0;
   background: var(--hero-main-bg);
 }
 
-.page-footer .container {
-  padding: 60px 15px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
-.page-footer__adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (min-width: 1200px) {
+  .page-footer .container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__adress {
+    text-align: center;
+  }
 }
 
 .page-footer__logo {
@@ -547,17 +569,19 @@ img {
   color: var(--white-color);
 }
 
-a.page-footer__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
+@media screen and (max-width: 767px) {
+  .page-footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
 }
 
 .web.page-footer__logo {
@@ -573,7 +597,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .footer-adress__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -587,6 +611,12 @@ a.page-footer__logo {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-adress__list {
+    text-align: center;
+  }
+}
+
 .footer-adress__item {
   margin-bottom: 10px;
 }
@@ -595,9 +625,15 @@ a.page-footer__logo {
   color: var(--adressf-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-footer__social {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__social {
+    text-align: center;
   }
 }
 
@@ -618,7 +654,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-footer__social h3.common-title {
     text-align: center;
   }
@@ -673,6 +709,12 @@ a.page-footer__logo {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .page-footer__subscribe {
+    margin-top: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .page-footer__subscribe {
     display: inline-block;
@@ -689,7 +731,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .page-footer__subscribe h3.common-title {
     text-align: center;
   }
@@ -701,7 +743,7 @@ a.page-footer__logo {
   display: flex;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .page-footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -731,7 +773,7 @@ a.page-footer__logo {
   color: var(--white-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .page-footer__mail {
     width: 450px;
     margin-bottom: 20px;

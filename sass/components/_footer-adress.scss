@@ -5,13 +5,18 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--white-color);
+  
 
   &__list{
-    @media screen and (max-width:768px) {
+    
+    @media screen and (max-width:767px) {
       display: flex;
       flex-direction: column;
       text-align: center;
       margin: 20px 0 60px;
+    }
+    @media screen and (min-width: 768px)and(max-width:1199px){
+      text-align: center;
     }
     
   }
