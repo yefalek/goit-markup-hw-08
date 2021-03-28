@@ -9,38 +9,25 @@
 
     & li{
       margin-left: 50px;
-    }
-  }
-  
 
-  .header-contacts{
-    & li{
       &:first-child{
         margin-left: 0px;
       }
     }
-  
-    & .header-contacts__link{
+
+    &__link{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       color: var(--third-color);
       font-style: normal;
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.02em;
       transition: var(--cubic-animation-time);
-    }
-  }
 
-  .header-contacts__link{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: var(--cubic-animation-time);
-  
-  }
-
-  .header-contacts{
-    & .header-contacts__link{
       &:hover,&:focus{
         &::after{
           color: var(--first-color);
@@ -50,26 +37,16 @@
         }
       }
     }
-  
-  }
 
-  .header-contacts{
-    & .header-contacts__link{
+    &__icon{
+      margin-right: 5px;
+      fill: currentColor;
+    
       &:hover,&:focus{
+        fill: currentColor;
         color: var(--first-color);
         transition: var(--cubic-animation-time);
       }
-    }
-  }
-
-  .header-contacts__icon{
-    margin-right: 5px;
-    fill: currentColor;
-  
-    &:hover,&:focus{
-      fill: currentColor;
-      color: var(--first-color);
-      transition: var(--cubic-animation-time);
     }
   }
 }
