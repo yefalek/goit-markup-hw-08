@@ -532,7 +532,7 @@ img {
   background: var(--hero-main-bg);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .page-footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -549,6 +549,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    width: 1200px;
   }
 }
 
