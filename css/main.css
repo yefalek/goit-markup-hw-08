@@ -1946,6 +1946,24 @@ img {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .filter__container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter__container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__container {
+    width: 1200px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .filter__section {
     padding: 60px 0;
@@ -1963,8 +1981,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1975,21 +1998,18 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .filter__list {
-    max-width: 468px;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-}
-
 .filter__item {
-  margin-left: 8px;
+  margin-right: 8px;
 }
 
-.filter__item:first-child {
-  margin-left: -8px;
+.filter__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter__item:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
 }
 
 h2.project_name {
@@ -2028,6 +2048,22 @@ h2.project_name {
 
 .project__list > .project__item:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .project__list > .project__item {
+    width: 100%;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project__list > .project__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .project__list > .project__item:first-child {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
