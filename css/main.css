@@ -1882,15 +1882,8 @@ img {
   transition: var(--cubic-animation-time);
 }
 
-.clients__link:hover, .clients__link :focus {
-  color: var(--first-color);
-  border: 1px solid var(--first-color);
-  -webkit-transition: var(--cubic-animation-time);
-  transition: var(--cubic-animation-time);
-}
-
 @media screen and (min-width: 1200px) {
-  .clients__link:hover, .clients__link :focus {
+  .clients__link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1903,6 +1896,13 @@ img {
     width: 170px;
     height: 90px;
   }
+}
+
+.clients__link:hover, .clients__link :focus {
+  color: var(--first-color);
+  border: 1px solid var(--first-color);
+  -webkit-transition: var(--cubic-animation-time);
+  transition: var(--cubic-animation-time);
 }
 
 .filter__button {
