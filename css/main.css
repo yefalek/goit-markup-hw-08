@@ -614,6 +614,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-adress__list {
     text-align: center;
+    margin-top: 20px;
   }
 }
 
