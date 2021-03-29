@@ -42,16 +42,18 @@
   }
 
   &__list{
-    &-first{
-      display: flex;
-      margin-bottom: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 768px){
+      justify-content: center;
     }
-    @media screen and (max-width:768px){
+    @media screen and (max-width:767px){
       max-width: 468px;
       justify-content: left;
     }
-    display: flex;
-    margin-bottom: 50px;
+    
   }
 
   &__item{

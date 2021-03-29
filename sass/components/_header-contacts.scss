@@ -13,14 +13,19 @@
   }
 
   @media screen and (min-width:1200px) {
+    display: flex;
+    text-align: center;
+    margin-left: auto;
     justify-content: center;
-    margin-left: 330px;
+    // margin-left: 330px;
   }
   
 
   &__item{
-    &:last-child{
-      margin-top: 10px;
+    @media screen and (max-width:1199px) {
+      &:last-child{
+        margin-top: 10px;
+      }
     }
   }
 
