@@ -490,6 +490,12 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+  .header-contacts__link:first-child {
+    margin-right: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header-contacts__link:hover::after, .header-contacts__link:focus::after {

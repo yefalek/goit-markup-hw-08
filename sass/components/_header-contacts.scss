@@ -49,6 +49,11 @@
     @media screen and (min-width:1200px) {
       justify-content: center;
       align-items: center;
+
+      &:first-child{
+        margin-right: 30px;
+        align-items: center;
+      }
     }
 
     &:hover,&:focus{
