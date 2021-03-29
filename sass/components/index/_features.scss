@@ -40,6 +40,11 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (min-width: 768px){
+      display: flex;
+      justify-content: space-between;
+    }
+
     @media screen and (min-width:768px) and (max-width:1199px){
       display: flex;
       flex-wrap: wrap;
