@@ -631,6 +631,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-adress__list {
+    margin-top: 20px;
+  }
+}
+
 .footer-adress__item {
   margin-bottom: 10px;
 }
