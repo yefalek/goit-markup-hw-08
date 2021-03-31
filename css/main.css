@@ -2041,7 +2041,6 @@ h2.project_name {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -2069,16 +2068,12 @@ h2.project_name {
 @media screen and (max-width: 767px) {
   .project__list > .project__item {
     width: 100%;
-    margin: 0 15px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .project__list > .project__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-  .project__list > .project__item:first-child {
-    margin-top: 30px;
   }
 }
 
