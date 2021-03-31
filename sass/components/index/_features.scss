@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: center;
 
+
     @media screen and (min-width: 768px){
       display: flex;
       justify-content: space-between;
@@ -56,10 +57,22 @@
   }
   
   &__item{
-    width: 450px;
+    max-width: 450px;
+
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
 
     @media screen and (min-width:768px) and (max-width:1199px){
       max-width: 354px;
+
+      &:nth-child(-n+2){
+        margin-bottom: 30px;
+      }
 
       &:nth-child(2n-1) {
         margin-right: 30px;
@@ -67,7 +80,7 @@
     }
     
     @media screen and (min-width:1200px){
-      &:nth-child(n + 2){
+      &:nth-child(-n + 2){
         margin-left: 30px; 
       }
     }
